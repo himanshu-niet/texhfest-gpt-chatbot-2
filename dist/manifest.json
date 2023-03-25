@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Chatbot ",
+  "version": "0.2.0",
+  "description": "NIET Techfest 2023 ,Press Ctrl+Shift+H to open the browser action popup",
+
+  "permissions": ["<all_urls>"],
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "./images/logo.png",
+     "icons": {
+       "16": "./images/logo.png",
+       "48": "./images/logo.png",
+      "128": "./images/logo.png"
+    }
+  },
+  
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "MacCtrl+Shift+H"
+      }
+    }
+  }
+}

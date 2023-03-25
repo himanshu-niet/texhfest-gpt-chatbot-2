@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+   <link href="./output.css" rel="stylesheet"/>
+  </head>
+
+  <body class="w-[310px] h-[510px] border rounded rounded-tr-lg rounded-tl-lg">
+      <div id="root" >
+      <main >
+        <div
+          class="h-[100px] w-full bg-[#011D4D] p-2 rounded-tr-lg rounded-tl-lg"
+        >
+          <div class="flex gap-3 items-center">
+            <img class="h-12 w-12" src="./images/logo.png" />
+            <h1 class="text-white text-lg font-semibold">Chat with OpenAI</h1>
+          </div>
+        </div>
+
+        <section class="flex flex-col h-[410px] p-3">
+          <section
+            class="overflow-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] pb-2"
+          >
+            <ul id="dialogue" class="flex flex-col space-y-4">
+              <li class="bg-gray-100 rounded p-2 w-fit self-start break-words">
+                Hi there 👋 I can help you with your support questions!
+              </li>
+            </ul>
+          </section>
+
+          <section class="mt-auto">
+            <form
+              id="prompt-form"
+              class="flex w-full mx-auto transition-all ease-linear hover:shadow-lg focus-within:shadow-lg rounded-full border border-gray-200 dark:border-[#6366f1] p-1 pl-5 items-center"
+            >
+              <label htmlFor="search" class="sr-only"></label>
+              <input
+                type="text"
+                id="prompt-input"
+                name="prompt"
+                class="flex-grow focus:outline-none dark:text-white bg-transparent text-gray-700"
+                placeholder="Enter Your Doubt..."
+              />
+              <button
+                class="border dark:border-zinc-600 w-11 h-10 rounded-full flex items-center justify-center bg-[#011D4D]"
+                type="submit"
+                aria-label="search-button"
+              >
+                <i class="fa fa-paper-plane text-white" aria-hidden="true"></i>
+              </button>
+            </form>
+          </section>
+
+          <h1 class="text-xs text-center font-semibold mt-1">
+            Developed By Himanshu
+          </h1>
+        </section>
+      </main>
+    </div>
+
+    
+       <script src="./main.js"></script>
+
+  </body>
+</html>
